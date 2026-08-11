@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
@@ -11,16 +10,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>資金整合是什麼？條件、流程、文件與常見問題｜安居資金顧問</title>
+    <title>債務整合與資金整合｜負債整理、條件、流程與常見問題｜安居資金顧問</title>
 
     <meta
         name="description"
-        content="安居資金顧問整理資金整合相關資訊，包含資金需求分析、負債整理、條件評估、申請文件、辦理流程與常見問題，提供免費初步諮詢與專人協助。"
-    >
-
-    <meta
-        name="keywords"
-        content="資金整合,資金規劃,負債整理,資金周轉,房屋二胎,不動產借貸,房屋貸款"
+        content="安居資金顧問整理債務整合、資金整合與負債整理相關資訊，包含多筆負債評估、資金需求分析、不動產條件、文件、流程與常見問題，協助了解適合的資金規劃方向。"
     >
 
     <meta
@@ -33,6 +27,9 @@
         href="https://fourseasons-cyber.github.io/anju-finance/fund-consolidation.html"
     >
 
+
+    <!-- Open Graph -->
+
     <meta
         property="og:type"
         content="article"
@@ -40,12 +37,12 @@
 
     <meta
         property="og:title"
-        content="資金整合是什麼？條件、流程、文件與常見問題"
+        content="債務整合與資金整合｜負債整理、條件、流程與常見問題"
     >
 
     <meta
         property="og:description"
-        content="了解資金整合的基本概念、條件評估、文件準備與辦理流程，提供免費初步諮詢。"
+        content="了解債務整合、資金整合與負債整理的評估方式、條件、文件與辦理流程。"
     >
 
     <meta
@@ -63,10 +60,16 @@
         content="zh_TW"
     >
 
+
+    <!-- Icons -->
+
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     >
+
+
+    <!-- Main CSS -->
 
     <link
         rel="stylesheet"
@@ -74,15 +77,17 @@
     >
 
 
+    <!-- Article CSS -->
+
     <style>
 
         .article-page {
-            padding: 100px 20px;
-            background: #f7f9fc;
+            padding: 95px 20px;
+            background: #faf7f3;
         }
 
         .article-container {
-            max-width: 900px;
+            max-width: 940px;
             margin: 0 auto;
         }
 
@@ -94,33 +99,69 @@
         .article-label {
             display: inline-block;
             margin-bottom: 15px;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2px;
+
+            color: #b4883c;
+
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
         }
 
         .article-header h1 {
-            font-size: 42px;
+            max-width: 850px;
+            margin: 0 auto 20px;
+
+            color: #1e4f91;
+
+            font-size: clamp(34px, 5vw, 48px);
             line-height: 1.4;
-            margin-bottom: 20px;
+            font-weight: 800;
         }
 
         .article-header p {
+            max-width: 720px;
+            margin: 0 auto;
+
             color: #666;
-            line-height: 1.8;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 30px;
+
+            color: #777;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #1e4f91;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
 
         .article-content {
             background: #fff;
-            padding: 45px;
-            border-radius: 20px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+
+            padding: 50px;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 12px 35px rgba(0,0,0,.07);
         }
 
         .article-content h2 {
-            margin-top: 45px;
+            margin-top: 48px;
             margin-bottom: 18px;
-            font-size: 28px;
+
+            color: #1e4f91;
+
+            font-size: 29px;
+            line-height: 1.5;
         }
 
         .article-content h2:first-child {
@@ -130,13 +171,19 @@
         .article-content h3 {
             margin-top: 30px;
             margin-bottom: 12px;
+
+            color: #222;
+
             font-size: 21px;
         }
 
         .article-content p {
-            line-height: 2;
-            color: #555;
             margin-bottom: 18px;
+
+            color: #555;
+
+            line-height: 2;
+            font-size: 16px;
         }
 
         .article-content ul {
@@ -145,67 +192,299 @@
         }
 
         .article-content li {
-            margin-bottom: 12px;
-            line-height: 1.8;
+            margin-bottom: 11px;
+
             color: #555;
+
+            line-height: 1.85;
         }
 
         .notice-box {
-            padding: 20px;
-            margin: 25px 0;
+            margin: 28px 0;
+            padding: 20px 22px;
+
+            border-left: 4px solid #b4883c;
             border-radius: 12px;
-            background: #f1f5f9;
-            line-height: 1.8;
+
+            background: #f7f3ec;
+
+            color: #555;
+            line-height: 1.9;
+        }
+
+        .debt-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+
+            margin: 25px 0 30px;
+        }
+
+        .debt-card {
+            padding: 22px;
+
+            border: 1px solid #e8e8e8;
+            border-radius: 14px;
+
+            background: #fafafa;
+        }
+
+        .debt-card h3 {
+            margin-top: 0;
+
+            color: #1e4f91;
+
+            font-size: 19px;
+        }
+
+        .debt-card p {
+            margin-bottom: 0;
+        }
+
+        .comparison-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+
+            margin: 25px 0 30px;
+        }
+
+        .comparison-card {
+            padding: 22px;
+
+            border: 1px solid #e8e8e8;
+            border-radius: 14px;
+
+            background: #fafafa;
+        }
+
+        .comparison-card h3 {
+            margin-top: 0;
+
+            color: #1e4f91;
+
+            font-size: 19px;
+        }
+
+        .comparison-card p {
+            margin-bottom: 0;
+        }
+
+        .process-list {
+            display: grid;
+            gap: 18px;
+
+            margin-top: 25px;
+        }
+
+        .process-item {
+            display: grid;
+            grid-template-columns: 52px 1fr;
+            gap: 16px;
+
+            align-items: start;
+
+            padding: 20px;
+
+            border-radius: 14px;
+
+            background: #faf7f3;
+        }
+
+        .process-number {
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #1e4f91;
+            color: #fff;
+
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .process-item h3 {
+            margin: 0 0 5px;
+
+            font-size: 19px;
+        }
+
+        .process-item p {
+            margin-bottom: 0;
+        }
+
+        .faq-section {
+            margin-top: 10px;
         }
 
         .faq-box {
+            padding: 24px 0;
+
             border-top: 1px solid #eee;
-            padding: 22px 0;
+        }
+
+        .faq-box:last-child {
+            border-bottom: 1px solid #eee;
         }
 
         .faq-box h3 {
             margin-top: 0;
+
+            color: #222;
+
+            font-size: 20px;
+        }
+
+        .faq-box p {
+            margin-bottom: 0;
+        }
+
+        .related-services {
+            margin-top: 45px;
+            padding-top: 35px;
+
+            border-top: 1px solid #eee;
+        }
+
+        .related-services h2 {
+            margin-top: 0;
+        }
+
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+
+            margin-top: 22px;
+        }
+
+        .related-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+
+            padding: 18px 20px;
+
+            border: 1px solid #dfe5ec;
+            border-radius: 13px;
+
+            background: #fff;
+
+            color: #1e4f91;
+
+            text-decoration: none;
+            font-weight: 700;
+
+            transition:
+                background .25s ease,
+                border-color .25s ease,
+                transform .25s ease;
+        }
+
+        .related-link:hover {
+            background: #f4f7fb;
+            border-color: #1e4f91;
+            transform: translateY(-2px);
         }
 
         .article-cta {
-            text-align: center;
             margin-top: 50px;
-            padding: 35px 20px;
-            border-radius: 18px;
-            background: #f5f7fa;
+            padding: 40px 28px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #1e4f91,
+                    #153b6d
+                );
+
+            color: #fff;
         }
 
         .article-cta h2 {
             margin-top: 0;
+            margin-bottom: 12px;
+
+            color: #fff;
+        }
+
+        .article-cta p {
+            max-width: 680px;
+            margin: 0 auto;
+
+            color: rgba(255,255,255,.88);
         }
 
         .cta-buttons {
             display: flex;
             justify-content: center;
-            gap: 15px;
             flex-wrap: wrap;
+
+            gap: 15px;
+
             margin-top: 25px;
         }
 
         .cta-buttons a {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
+
+            min-width: 180px;
+
             padding: 13px 24px;
+
             border-radius: 999px;
+
             text-decoration: none;
             font-weight: 700;
+
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+        }
+
+        .cta-buttons a:hover {
+            transform: translateY(-2px);
         }
 
         .btn-home {
-            background: #222;
-            color: #fff;
+            background: #fff;
+            color: #1e4f91;
+
+            box-shadow:
+                0 8px 22px rgba(0,0,0,.15);
         }
 
         .btn-line {
             background: #06c755;
             color: #fff;
+
+            box-shadow:
+                0 8px 22px rgba(0,0,0,.14);
         }
+
+        .article-disclaimer {
+            margin-top: 25px;
+
+            color: #777;
+
+            font-size: 13px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
 
         @media (max-width: 768px) {
 
@@ -214,15 +493,49 @@
             }
 
             .article-content {
-                padding: 25px 20px;
+                padding: 28px 22px;
             }
 
             .article-header h1 {
-                font-size: 30px;
+                font-size: 31px;
+            }
+
+            .article-header p {
+                font-size: 16px;
             }
 
             .article-content h2 {
                 font-size: 24px;
+            }
+
+            .debt-grid,
+            .comparison-box,
+            .related-links {
+                grid-template-columns: 1fr;
+            }
+
+            .process-item {
+                grid-template-columns: 44px 1fr;
+                padding: 18px;
+            }
+
+            .process-number {
+                width: 42px;
+                height: 42px;
+
+                font-size: 16px;
+            }
+
+            .article-cta {
+                padding: 32px 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-buttons a {
+                width: 100%;
             }
 
         }
@@ -233,71 +546,79 @@
     <!-- WebPage Schema -->
 
     <script type="application/ld+json">
-
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "資金整合是什麼？條件、流程、文件與常見問題",
+        "name": "債務整合與資金整合｜負債整理、條件、流程與常見問題",
         "url": "https://fourseasons-cyber.github.io/anju-finance/fund-consolidation.html",
-        "description": "整理資金整合基本概念、條件評估、文件準備、辦理流程與常見問題。",
+        "description": "整理債務整合、資金整合、負債整理、條件評估、文件、流程與常見問題。",
+        "inLanguage": "zh-Hant-TW",
         "isPartOf": {
             "@type": "WebSite",
             "name": "安居資金顧問",
             "url": "https://fourseasons-cyber.github.io/anju-finance/"
         }
     }
-
     </script>
 
 
     <!-- FAQ Schema -->
 
     <script type="application/ld+json">
-
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-
             {
                 "@type": "Question",
-                "name": "什麼是資金整合？",
+                "name": "什麼是債務整合？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "資金整合是針對個人的資金需求與現有負債狀況進行整理與規劃，了解不同資金項目的整體負擔，再依個案條件評估可能的資金安排方式。"
+                    "text": "債務整合是先整理現有貸款、負債、每月還款金額與資金需求，再依收入、資產與個案條件評估是否有較適合的資金安排方式。實際結果依個案審查為準。"
                 }
             },
-
             {
                 "@type": "Question",
-                "name": "哪些情況可能需要資金整合？",
+                "name": "資金整合與債務整合有什麼不同？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "當個人同時存在多項資金需求或負債，且希望了解整體資金狀況時，可以先進行資金整理與評估。"
+                    "text": "資金整合涵蓋範圍較廣，可能同時包含現有負債整理與新增資金需求；債務整合則較著重於現有負債、還款結構與整體財務負擔的整理。"
                 }
             },
-
             {
                 "@type": "Question",
-                "name": "資金整合需要哪些資料？",
+                "name": "有多筆負債就一定適合債務整合嗎？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "實際所需資料會依個案不同而有所差異，常見可能包含身分證明、收入或財力資料、現有貸款或負債資料，以及不動產相關資料。"
+                    "text": "不一定。是否適合需要綜合評估各筆負債利率、剩餘本金、期數、相關費用、收入、還款能力及資產條件。"
                 }
             },
-
             {
                 "@type": "Question",
-                "name": "資金整合一定可以降低每月還款嗎？",
+                "name": "債務整合一定能降低每月還款金額嗎？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "不一定。實際每月還款金額會受到貸款金額、利率、期數、費用及個案條件等因素影響，需要個別評估。"
+                    "text": "不一定。每月還款金額會受到本金、利率、期數、費用與整體方案條件影響，延長期數雖可能改變月付金，也可能增加總利息成本。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "債務整合需要有房子嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "不一定，需視實際規劃方式而定。若方案涉及房屋二胎或不動產擔保，則會進一步評估房屋價值、既有貸款與抵押權狀況。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "進行資金整合需要準備哪些資料？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "常見可能包含身分證明、收入或財力資料、現有貸款與負債明細、不動產相關資料，以及其他案件評估所需文件。"
                 }
             }
-
         ]
     }
-
     </script>
 
 </head>
@@ -311,20 +632,40 @@
         <div class="article-container">
 
 
+            <!-- Breadcrumb -->
+
+            <nav class="breadcrumb" aria-label="麵包屑導覽">
+
+                <a href="index.html">
+                    安居資金顧問
+                </a>
+
+                <span> › </span>
+
+                <span>
+                    債務整合與資金整合
+                </span>
+
+            </nav>
+
+
+            <!-- Header -->
+
             <header class="article-header">
 
                 <span class="article-label">
-                    FUND CONSOLIDATION
+                    DEBT & FUND CONSOLIDATION
                 </span>
 
                 <h1>
-                    資金整合是什麼？<br>
-                    條件、流程、文件與常見問題
+                    債務整合與資金整合<br>
+                    負債整理、條件、流程與常見問題
                 </h1>
 
                 <p>
-                    安居資金顧問整理資金整合相關資訊，
-                    協助您先了解自身資金狀況，再進行適合的規劃方向評估。
+                    當名下同時有多筆貸款、每月還款項目較多，
+                    或同時存在新的資金需求時，
+                    可以先整理整體負債與現金流，再評估是否存在較合適的資金安排方式。
                 </p>
 
             </header>
@@ -333,20 +674,26 @@
             <article class="article-content">
 
 
+                <!-- 01 -->
+
                 <h2>
-                    什麼是資金整合？
+                    什麼是債務整合？
                 </h2>
 
                 <p>
-                    資金整合主要是將個人的資金需求與目前的負債狀況整理清楚，
-                    了解現有貸款、還款負擔及資金需求後，
-                    再評估適合的資金規劃方向。
+                    債務整合的核心不是單純再增加一筆借款，
+                    而是先把目前所有貸款、負債、
+                    每月還款金額、利率、剩餘本金與期數整理清楚，
+                    再評估目前的還款結構是否仍然適合。
                 </p>
 
                 <p>
-                    每個人的收入、負債、不動產條件及資金需求不同，
-                    因此資金整合並不是固定的方案，
-                    而是需要依個案條件進行評估。
+                    對部分有多筆負債的人而言，
+                    如果每月需要分別處理多個還款項目，
+                    可能會希望重新整理資金結構。
+                    但是否適合進一步整合，
+                    仍需依收入、還款能力、既有負債、
+                    資產與整體案件條件判斷。
                 </p>
 
 
@@ -354,63 +701,324 @@
 
                     <strong>重要提醒：</strong>
 
-                    資金整合不代表一定可以降低利率或每月還款金額，
-                    實際結果仍需依貸款條件、期數、費用及個案狀況評估。
+                    債務整合不代表一定可以降低利率、
+                    降低月付金或減少總成本。
+                    實際結果需綜合考量本金、利率、期數、
+                    手續費及其他契約條件。
 
                 </div>
 
 
+                <!-- 02 -->
+
                 <h2>
-                    哪些情況可能需要資金整合？
+                    資金整合與債務整合有什麼不同？
                 </h2>
 
                 <p>
-                    當個人同時存在多項資金需求或不同負債項目時，
-                    可以先將目前的資金狀況整理清楚。
+                    「資金整合」與「債務整合」在實務上經常一起被討論，
+                    但兩者的重點稍有不同。
+                </p>
+
+
+                <div class="comparison-box">
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            債務整合
+                        </h3>
+
+                        <p>
+                            主要著重在現有貸款、負債、
+                            每月還款負擔與整體債務結構，
+                            評估是否需要重新整理。
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            資金整合
+                        </h3>
+
+                        <p>
+                            範圍較廣，
+                            除了既有負債，
+                            也可能包含新的資金需求、
+                            不動產條件與未來現金流規劃。
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    因此如果目前只有負債整理需求，
+                    可以先從債務結構著手；
+                    如果同時有新的資金需求，
+                    則需要將現有負債與新增資金一起評估。
+                </p>
+
+
+                <!-- 03 -->
+
+                <h2>
+                    哪些情況可能會考慮債務整合？
+                </h2>
+
+                <p>
+                    是否需要進行整合，
+                    不能只看負債筆數，
+                    而應先確認目前還款結構是否已經造成財務壓力。
+                </p>
+
+
+                <div class="debt-grid">
+
+                    <div class="debt-card">
+
+                        <h3>
+                            多筆貸款同時繳款
+                        </h3>
+
+                        <p>
+                            名下同時存在多筆貸款，
+                            每月需要分別支付不同還款項目。
+                        </p>
+
+                    </div>
+
+
+                    <div class="debt-card">
+
+                        <h3>
+                            每月現金流壓力增加
+                        </h3>
+
+                        <p>
+                            收入與支出之間的空間縮小，
+                            希望重新檢視每月還款結構。
+                        </p>
+
+                    </div>
+
+
+                    <div class="debt-card">
+
+                        <h3>
+                            同時有新的資金需求
+                        </h3>
+
+                        <p>
+                            除了既有負債外，
+                            還有家庭、營運或其他合法資金用途需要規劃。
+                        </p>
+
+                    </div>
+
+
+                    <div class="debt-card">
+
+                        <h3>
+                            名下具有不動產資產
+                        </h3>
+
+                        <p>
+                            希望了解是否能透過不動產條件，
+                            重新評估整體資金與負債安排。
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 04 -->
+
+                <h2>
+                    債務整合前，先把哪些負債整理清楚？
+                </h2>
+
+                <p>
+                    在評估任何整合方案之前，
+                    建議先將目前所有負債完整列出。
                 </p>
 
                 <ul>
 
                     <li>
-                        同時有多筆貸款或資金需求
+                        房屋貸款目前餘額
                     </li>
 
                     <li>
-                        希望了解目前整體還款負擔
+                        信用貸款或其他貸款餘額
                     </li>
 
                     <li>
-                        有資金周轉需求
+                        信用卡分期或循環相關負擔
                     </li>
 
                     <li>
-                        想重新整理現有資金安排
+                        車貸或其他分期付款
                     </li>
 
                     <li>
-                        希望依自身條件了解可能的規劃方向
+                        每筆貸款目前利率
+                    </li>
+
+                    <li>
+                        每筆貸款剩餘期數
+                    </li>
+
+                    <li>
+                        每月總還款金額
+                    </li>
+
+                    <li>
+                        是否存在提前清償費用或其他契約限制
+                    </li>
+
+                </ul>
+
+                <p>
+                    只有把這些資料整理完整，
+                    才能真正比較「維持原本方式」與「重新規劃」之間的差異。
+                </p>
+
+
+                <!-- 05 -->
+
+                <h2>
+                    資金整合主要會評估哪些條件？
+                </h2>
+
+                <p>
+                    實際規劃通常會從收入、負債、
+                    資產與資金需求四個方向一起評估。
+                </p>
+
+                <ul>
+
+                    <li>
+                        每月收入與主要收入來源
+                    </li>
+
+                    <li>
+                        目前所有貸款與負債
+                    </li>
+
+                    <li>
+                        每月實際還款金額
+                    </li>
+
+                    <li>
+                        信用與還款紀錄
+                    </li>
+
+                    <li>
+                        名下是否具有房屋、土地或其他資產
+                    </li>
+
+                    <li>
+                        現有不動產貸款及抵押權狀況
+                    </li>
+
+                    <li>
+                        目前需要新增多少資金
+                    </li>
+
+                    <li>
+                        資金實際用途
+                    </li>
+
+                    <li>
+                        未來可承擔的每月還款金額
                     </li>
 
                 </ul>
 
 
+                <!-- 06 -->
+
                 <h2>
-                    資金整合會評估哪些條件？
+                    有不動產時，債務整合怎麼評估？
                 </h2>
 
                 <p>
-                    進行資金整合評估時，通常需要先了解整體財務及資金狀況，
-                    常見評估方向包括：
+                    如果名下具有房屋或其他不動產，
+                    在評估整體資金結構時，
+                    可能會一併了解不動產價值、
+                    既有貸款餘額、抵押權設定及其他產權條件。
+                </p>
+
+                <p>
+                    例如房屋已有第一順位房貸，
+                    但仍具有剩餘價值，
+                    則可以進一步了解是否存在
+                    <a href="house-second-mortgage.html">
+                        房屋二胎
+                    </a>
+                    或其他不動產資金規劃方向。
+                </p>
+
+                <p>
+                    若希望從更廣泛的不動產資產角度進行評估，
+                    也可以參考
+                    <a href="real-estate-loan.html">
+                        不動產資金規劃
+                    </a>。
+                </p>
+
+
+                <div class="notice-box">
+
+                    有房產不代表一定適合用房產增加借款。
+                    是否值得採用不動產擔保方式，
+                    仍應比較整體利率、費用、還款壓力、
+                    抵押順位與可能風險。
+
+                </div>
+
+
+                <!-- 07 -->
+
+                <h2>
+                    債務整合一定可以降低月付金嗎？
+                </h2>
+
+                <p>
+                    不一定。
+                </p>
+
+                <p>
+                    月付金會受到借款本金、利率、
+                    還款方式與期數共同影響。
+                    有些方案可能透過延長還款期間，
+                    改變每月還款金額，
+                    但如果還款期間拉長，
+                    整體利息成本也可能增加。
+                </p>
+
+                <p>
+                    因此不能只比較「每月繳多少」，
+                    還應同時比較：
                 </p>
 
                 <ul>
 
                     <li>
-                        每月收入及收入來源
+                        新方案總借款金額
                     </li>
 
                     <li>
-                        目前貸款及負債
+                        實際利率
+                    </li>
+
+                    <li>
+                        總還款期數
                     </li>
 
                     <li>
@@ -418,27 +1026,26 @@
                     </li>
 
                     <li>
-                        不動產及其他資產條件
+                        手續費或其他費用
                     </li>
 
                     <li>
-                        所需資金金額
-                    </li>
-
-                    <li>
-                        預計還款能力
+                        整體預計支付成本
                     </li>
 
                 </ul>
 
 
+                <!-- 08 -->
+
                 <h2>
-                    資金整合需要哪些文件？
+                    資金整合需要準備哪些資料？
                 </h2>
 
                 <p>
-                    實際所需文件會依案件及辦理方式有所不同，
-                    常見可能需要：
+                    實際需要提供的文件，
+                    會依案件條件與規劃方式有所不同。
+                    常見可能包含：
                 </p>
 
                 <ul>
@@ -452,170 +1059,365 @@
                     </li>
 
                     <li>
-                        現有貸款及負債相關資料
+                        現有各筆貸款資料
                     </li>
 
                     <li>
-                        不動產相關資料
+                        每月還款明細
                     </li>
 
                     <li>
-                        其他案件評估所需資料
+                        信用卡或其他負債相關資料
+                    </li>
+
+                    <li>
+                        不動產土地及建物資料
+                    </li>
+
+                    <li>
+                        既有房貸與抵押權相關資料
+                    </li>
+
+                    <li>
+                        其他案件審查所需文件
                     </li>
 
                 </ul>
 
 
-                <h2>
-                    資金整合辦理流程
-                </h2>
-
-
-                <h3>
-                    ① 了解資金需求
-                </h3>
-
-                <p>
-                    先整理目前需要多少資金，以及資金用途與需求。
-                </p>
-
-
-                <h3>
-                    ② 整理現有負債
-                </h3>
-
-                <p>
-                    了解目前有哪些貸款、負債及每月還款負擔。
-                </p>
-
-
-                <h3>
-                    ③ 個案條件評估
-                </h3>
-
-                <p>
-                    依收入、負債、不動產及其他相關條件進行綜合評估。
-                </p>
-
-
-                <h3>
-                    ④ 規劃後續方式
-                </h3>
-
-                <p>
-                    依評估結果了解可能的資金規劃方向，
-                    實際方案仍以個案條件及正式契約內容為準。
-                </p>
-
+                <!-- 09 -->
 
                 <h2>
-                    資金整合要注意什麼？
+                    債務整合與資金整合流程
                 </h2>
 
                 <p>
-                    進行資金整合時，不應只看能取得多少資金，
-                    也應確認整體還款成本及自身還款能力。
+                    實際流程會依個案及最終規劃方式有所不同，
+                    一般可以先從以下四個階段理解：
+                </p>
+
+
+                <div class="process-list">
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            1
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                整理資金需求
+                            </h3>
+
+                            <p>
+                                確認目前是否只有負債整理需求，
+                                或同時存在新的資金用途。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            2
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                整理現有負債
+                            </h3>
+
+                            <p>
+                                列出目前各筆貸款本金、
+                                利率、期數與每月還款金額。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            3
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                評估收入與資產條件
+                            </h3>
+
+                            <p>
+                                依收入、負債、不動產、
+                                還款能力及其他條件進行整體評估。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            4
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                比較方案與後續規劃
+                            </h3>
+
+                            <p>
+                                比較可能方案的利率、期數、
+                                月付金、費用及總成本，
+                                再決定是否適合進行後續辦理。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- 10 -->
+
+                <h2>
+                    債務整合要注意哪些風險？
+                </h2>
+
+                <p>
+                    債務整合的目的應該是讓財務結構更清楚，
+                    而不是單純把舊負債換成新的負債。
                 </p>
 
                 <ul>
 
                     <li>
-                        每月實際還款金額
+                        不要只看月付金是否變低
                     </li>
 
                     <li>
-                        貸款期間
+                        要確認總還款年限是否拉長
                     </li>
 
                     <li>
-                        利率
+                        要比較整體利息與相關費用
                     </li>
 
                     <li>
-                        相關手續費及其他費用
+                        注意提前清償或違約條件
                     </li>
 
                     <li>
-                        提前清償或其他契約條件
+                        若涉及不動產抵押，應了解抵押權順位
                     </li>
 
                     <li>
-                        自身長期還款能力
+                        確認每月現金流是否真的可以承擔
+                    </li>
+
+                    <li>
+                        不應以新增借款處理持續性的收支失衡
                     </li>
 
                 </ul>
 
 
-                <h2>
-                    資金整合常見問題
-                </h2>
+                <div class="notice-box">
 
-
-                <div class="faq-box">
-
-                    <h3>
-                        什麼是資金整合？
-                    </h3>
-
-                    <p>
-                        資金整合是整理目前資金需求與負債狀況，
-                        再依個案條件評估適合的資金規劃方向。
-                    </p>
+                    如果收入與支出本身長期失衡，
+                    單純重新借款不一定能解決根本問題。
+                    在進行任何資金整合前，
+                    應先確認未來現金流與還款來源是否合理。
 
                 </div>
 
 
-                <div class="faq-box">
+                <!-- FAQ -->
 
-                    <h3>
-                        資金整合一定可以降低每月還款嗎？
-                    </h3>
+                <section class="faq-section">
+
+                    <h2>
+                        債務整合與資金整合常見問題
+                    </h2>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            什麼是債務整合？
+                        </h3>
+
+                        <p>
+                            債務整合是先整理現有貸款、
+                            負債與每月還款負擔，
+                            再依收入、資產與個案條件，
+                            評估是否存在較適合的資金安排方式。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            資金整合跟債務整合是一樣的嗎？
+                        </h3>
+
+                        <p>
+                            不完全相同。
+                            債務整合主要著重既有負債；
+                            資金整合的範圍較廣，
+                            也可能包含新的資金需求與整體現金流安排。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            有很多筆貸款就一定適合整合嗎？
+                        </h3>
+
+                        <p>
+                            不一定。
+                            需要比較目前每筆貸款的利率、
+                            本金、剩餘期數、費用，
+                            以及新的規劃方式是否真的更適合。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            債務整合一定能降低每月還款嗎？
+                        </h3>
+
+                        <p>
+                            不一定。
+                            每月還款會受到本金、
+                            利率、期數與方案條件影響。
+                            即使月付金下降，
+                            總成本也可能因還款期間延長而增加。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            債務整合需要有房子嗎？
+                        </h3>
+
+                        <p>
+                            不一定。
+                            是否需要不動產會依實際規劃方式而定。
+                            若方案涉及房屋二胎或不動產擔保，
+                            才會進一步評估房屋條件。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            信用條件不好還能評估嗎？
+                        </h3>
+
+                        <p>
+                            是否存在可行方向不能只看單一信用條件，
+                            還需要一併評估收入、
+                            現有負債、還款能力、
+                            資產條件與整體案件狀況。
+                        </p>
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- Related Services -->
+
+                <section class="related-services">
+
+                    <h2>
+                        其他相關資金規劃
+                    </h2>
 
                     <p>
-                        不一定。每月還款金額會受到貸款金額、
-                        利率、期數及相關費用等因素影響。
+                        如果目前的資金規劃與房屋或其他不動產有關，
+                        可以進一步了解以下內容。
                     </p>
 
-                </div>
+
+                    <div class="related-links">
+
+                        <a
+                            href="house-second-mortgage.html"
+                            class="related-link"
+                        >
+
+                            <span>
+                                房屋二胎與二胎房貸
+                            </span>
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
 
 
-                <div class="faq-box">
+                        <a
+                            href="real-estate-loan.html"
+                            class="related-link"
+                        >
 
-                    <h3>
-                        有多筆負債就一定適合資金整合嗎？
-                    </h3>
+                            <span>
+                                不動產資金規劃
+                            </span>
 
-                    <p>
-                        不一定。是否適合需要依收入、負債、
-                        資金需求及整體還款能力進行個案評估。
-                    </p>
+                            <i class="bi bi-arrow-right"></i>
 
-                </div>
+                        </a>
+
+                    </div>
+
+                </section>
 
 
-                <div class="faq-box">
-
-                    <h3>
-                        資金整合需要不動產嗎？
-                    </h3>
-
-                    <p>
-                        是否需要不動產會依實際規劃方式及案件條件而有所不同，
-                        建議先進行基本條件評估。
-                    </p>
-
-                </div>
-
+                <!-- CTA -->
 
                 <section class="article-cta">
 
                     <h2>
-                        想了解自己的資金狀況？
+                        想先整理目前的負債與資金狀況？
                     </h2>
 
                     <p>
-                        歡迎先進行免費初步諮詢，
-                        實際規劃方向依個案條件評估。
+                        可先整理現有貸款、每月還款金額、
+                        收入狀況、不動產條件與新增資金需求，
+                        由專員進行免費初步諮詢與條件評估。
+                        實際方案、利率、費用、
+                        期數與相關內容，
+                        依個案審查與正式契約為準。
                     </p>
 
 
@@ -628,7 +1430,7 @@
 
                             <i class="bi bi-chat-dots"></i>
 
-                            免費諮詢
+                            免費初步評估
 
                         </a>
 
@@ -651,6 +1453,19 @@
                 </section>
 
 
+                <p class="article-disclaimer">
+
+                    本頁內容為一般性資訊整理，
+                    不代表任何個案一定可以完成債務整合，
+                    亦不構成降低利率、降低月付金、
+                    核貸或特定條件之保證。
+                    實際方案、利率、費用、期數、
+                    擔保條件、審查方式及契約內容，
+                    依個案條件與正式文件為準。
+
+                </p>
+
+
             </article>
 
 
@@ -662,4 +1477,3 @@
 </body>
 
 </html>
-```
