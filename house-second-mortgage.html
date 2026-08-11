@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
@@ -11,16 +10,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>房屋二胎是什麼？條件、文件、流程與常見問題｜安居資金顧問</title>
+    <title>房屋二胎是什麼？二胎房貸條件、流程、文件與常見問題｜安居資金顧問</title>
 
     <meta
         name="description"
-        content="房屋二胎是什麼？安居資金顧問整理房屋二胎基本條件、申請文件、辦理流程、還款方式與常見問題，提供免費初步諮詢與專人協助。"
-    >
-
-    <meta
-        name="keywords"
-        content="房屋二胎,二胎房貸,房屋二胎條件,房屋二胎申請,房屋二胎文件,房屋二胎流程,房屋二胎利率,房屋二胎貸款"
+        content="房屋二胎是什麼？安居資金顧問整理二胎房貸條件、申請文件、辦理流程、還款方式、房屋增貸差異與常見問題，協助屋主先了解房屋二胎的評估重點。"
     >
 
     <meta
@@ -33,6 +27,9 @@
         href="https://fourseasons-cyber.github.io/anju-finance/house-second-mortgage.html"
     >
 
+
+    <!-- Open Graph -->
+
     <meta
         property="og:type"
         content="article"
@@ -40,12 +37,12 @@
 
     <meta
         property="og:title"
-        content="房屋二胎是什麼？條件、文件、流程與常見問題"
+        content="房屋二胎是什麼？二胎房貸條件、流程、文件與常見問題"
     >
 
     <meta
         property="og:description"
-        content="了解房屋二胎基本條件、申請文件、辦理流程與常見問題，提供免費初步諮詢。"
+        content="了解房屋二胎、二胎房貸條件、申請文件、辦理流程、房屋增貸差異與常見問題。"
     >
 
     <meta
@@ -63,25 +60,34 @@
         content="zh_TW"
     >
 
+
+    <!-- Icons -->
+
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     >
+
+
+    <!-- Main CSS -->
 
     <link
         rel="stylesheet"
         href="style.css"
     >
 
+
+    <!-- Article Page CSS -->
+
     <style>
 
         .article-page {
-            padding: 100px 20px;
-            background: #f7f9fc;
+            padding: 95px 20px;
+            background: #faf7f3;
         }
 
         .article-container {
-            max-width: 900px;
+            max-width: 940px;
             margin: 0 auto;
         }
 
@@ -92,34 +98,71 @@
 
         .article-label {
             display: inline-block;
+
             margin-bottom: 15px;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 2px;
+
+            color: #b4883c;
+
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
         }
 
         .article-header h1 {
-            font-size: 42px;
+            max-width: 850px;
+            margin: 0 auto 20px;
+
+            color: #1e4f91;
+
+            font-size: clamp(34px, 5vw, 48px);
             line-height: 1.4;
-            margin-bottom: 20px;
+            font-weight: 800;
         }
 
         .article-header p {
+            max-width: 720px;
+            margin: 0 auto;
+
             color: #666;
-            line-height: 1.8;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 30px;
+
+            color: #777;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #1e4f91;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
         }
 
         .article-content {
             background: #fff;
-            padding: 45px;
-            border-radius: 20px;
-            box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+
+            padding: 50px;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 12px 35px rgba(0,0,0,.07);
         }
 
         .article-content h2 {
-            margin-top: 45px;
+            margin-top: 48px;
             margin-bottom: 18px;
-            font-size: 28px;
+
+            color: #1e4f91;
+
+            font-size: 29px;
+            line-height: 1.5;
         }
 
         .article-content h2:first-child {
@@ -129,13 +172,19 @@
         .article-content h3 {
             margin-top: 30px;
             margin-bottom: 12px;
+
+            color: #222;
+
             font-size: 21px;
         }
 
         .article-content p {
-            line-height: 2;
-            color: #555;
             margin-bottom: 18px;
+
+            color: #555;
+
+            line-height: 2;
+            font-size: 16px;
         }
 
         .article-content ul {
@@ -144,67 +193,274 @@
         }
 
         .article-content li {
-            margin-bottom: 12px;
-            line-height: 1.8;
+            margin-bottom: 11px;
+
             color: #555;
+
+            line-height: 1.85;
+        }
+
+        .article-content strong {
+            color: #333;
         }
 
         .notice-box {
-            padding: 20px;
-            margin: 25px 0;
+            margin: 28px 0;
+            padding: 20px 22px;
+
+            border-left: 4px solid #b4883c;
             border-radius: 12px;
-            background: #f1f5f9;
-            line-height: 1.8;
+
+            background: #f7f3ec;
+
+            color: #555;
+            line-height: 1.9;
+        }
+
+        .comparison-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+
+            margin: 25px 0 30px;
+        }
+
+        .comparison-card {
+            padding: 22px;
+
+            border: 1px solid #e8e8e8;
+            border-radius: 14px;
+
+            background: #fafafa;
+        }
+
+        .comparison-card h3 {
+            margin-top: 0;
+
+            color: #1e4f91;
+
+            font-size: 19px;
+        }
+
+        .comparison-card p {
+            margin-bottom: 0;
+        }
+
+        .process-list {
+            display: grid;
+            gap: 18px;
+
+            margin-top: 25px;
+        }
+
+        .process-item {
+            display: grid;
+            grid-template-columns: 52px 1fr;
+            gap: 16px;
+
+            align-items: start;
+
+            padding: 20px;
+
+            border-radius: 14px;
+
+            background: #faf7f3;
+        }
+
+        .process-number {
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #1e4f91;
+            color: #fff;
+
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .process-item h3 {
+            margin: 0 0 5px;
+
+            font-size: 19px;
+        }
+
+        .process-item p {
+            margin-bottom: 0;
+        }
+
+        .faq-section {
+            margin-top: 10px;
         }
 
         .faq-box {
+            padding: 24px 0;
+
             border-top: 1px solid #eee;
-            padding: 22px 0;
+        }
+
+        .faq-box:last-child {
+            border-bottom: 1px solid #eee;
         }
 
         .faq-box h3 {
             margin-top: 0;
+
+            color: #222;
+
+            font-size: 20px;
+        }
+
+        .faq-box p {
+            margin-bottom: 0;
+        }
+
+        .related-services {
+            margin-top: 45px;
+            padding-top: 35px;
+
+            border-top: 1px solid #eee;
+        }
+
+        .related-services h2 {
+            margin-top: 0;
+        }
+
+        .related-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+
+            margin-top: 22px;
+        }
+
+        .related-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+
+            padding: 18px 20px;
+
+            border: 1px solid #dfe5ec;
+            border-radius: 13px;
+
+            background: #fff;
+
+            color: #1e4f91;
+
+            text-decoration: none;
+            font-weight: 700;
+
+            transition:
+                background .25s ease,
+                border-color .25s ease,
+                transform .25s ease;
+        }
+
+        .related-link:hover {
+            background: #f4f7fb;
+            border-color: #1e4f91;
+            transform: translateY(-2px);
         }
 
         .article-cta {
-            text-align: center;
             margin-top: 50px;
-            padding: 35px 20px;
-            border-radius: 18px;
-            background: #f5f7fa;
+            padding: 40px 28px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #1e4f91,
+                    #153b6d
+                );
+
+            color: #fff;
         }
 
         .article-cta h2 {
             margin-top: 0;
+            margin-bottom: 12px;
+
+            color: #fff;
+        }
+
+        .article-cta p {
+            max-width: 680px;
+            margin: 0 auto;
+
+            color: rgba(255,255,255,.88);
         }
 
         .cta-buttons {
             display: flex;
             justify-content: center;
-            gap: 15px;
             flex-wrap: wrap;
+
+            gap: 15px;
+
             margin-top: 25px;
         }
 
         .cta-buttons a {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
+
+            min-width: 180px;
+
             padding: 13px 24px;
+
             border-radius: 999px;
+
             text-decoration: none;
             font-weight: 700;
+
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease;
+        }
+
+        .cta-buttons a:hover {
+            transform: translateY(-2px);
         }
 
         .btn-home {
-            background: #222;
-            color: #fff;
+            background: #fff;
+            color: #1e4f91;
+
+            box-shadow:
+                0 8px 22px rgba(0,0,0,.15);
         }
 
         .btn-line {
             background: #06c755;
             color: #fff;
+
+            box-shadow:
+                0 8px 22px rgba(0,0,0,.14);
         }
+
+        .article-disclaimer {
+            margin-top: 25px;
+
+            color: #777;
+
+            font-size: 13px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
 
         @media (max-width: 768px) {
 
@@ -213,15 +469,49 @@
             }
 
             .article-content {
-                padding: 25px 20px;
+                padding: 28px 22px;
             }
 
             .article-header h1 {
-                font-size: 30px;
+                font-size: 31px;
+            }
+
+            .article-header p {
+                font-size: 16px;
             }
 
             .article-content h2 {
                 font-size: 24px;
+            }
+
+            .comparison-box,
+            .related-links {
+                grid-template-columns: 1fr;
+            }
+
+            .process-item {
+                grid-template-columns: 44px 1fr;
+
+                padding: 18px;
+            }
+
+            .process-number {
+                width: 42px;
+                height: 42px;
+
+                font-size: 16px;
+            }
+
+            .article-cta {
+                padding: 32px 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-buttons a {
+                width: 100%;
             }
 
         }
@@ -232,71 +522,79 @@
     <!-- WebPage Schema -->
 
     <script type="application/ld+json">
-
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "房屋二胎是什麼？條件、文件、流程與常見問題",
+        "name": "房屋二胎是什麼？二胎房貸條件、流程、文件與常見問題",
         "url": "https://fourseasons-cyber.github.io/anju-finance/house-second-mortgage.html",
-        "description": "整理房屋二胎基本條件、申請文件、辦理流程、還款方式與常見問題。",
+        "description": "整理房屋二胎、二胎房貸基本條件、申請文件、辦理流程、房屋增貸差異、還款方式與常見問題。",
+        "inLanguage": "zh-Hant-TW",
         "isPartOf": {
             "@type": "WebSite",
             "name": "安居資金顧問",
             "url": "https://fourseasons-cyber.github.io/anju-finance/"
         }
     }
-
     </script>
 
 
     <!-- FAQ Schema -->
 
     <script type="application/ld+json">
-
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-
             {
                 "@type": "Question",
                 "name": "什麼是房屋二胎？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "房屋二胎通常是指房屋已有第一順位抵押權後，再依房屋剩餘價值及個案條件進行後續資金規劃。實際是否能辦理及相關條件，仍需依案件評估。"
+                    "text": "房屋二胎通常是指房屋已有第一順位抵押權後，再依房屋剩餘價值、既有債務及個案條件評估第二順位的資金規劃方式。實際是否可辦理及相關條件，仍需依案件審查結果為準。"
                 }
             },
-
+            {
+                "@type": "Question",
+                "name": "房屋二胎與房屋增貸有什麼不同？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "房屋增貸通常是向既有第一順位貸款機構申請增加貸款額度；房屋二胎則是在第一順位抵押權仍存在的情況下，再依剩餘房屋價值與個案條件評估第二順位資金規劃。"
+                }
+            },
             {
                 "@type": "Question",
                 "name": "申請房屋二胎需要哪些文件？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "實際文件會依案件及辦理方式而有所不同，常見資料可能包含身分證明、土地及建物相關資料，以及收入或其他財力證明。實際以專員評估結果為準。"
+                    "text": "常見資料可能包含身分證明、土地與建物相關資料、既有貸款資訊、收入或財力相關證明，以及其他案件審查所需文件。實際文件依個案及辦理方式為準。"
                 }
             },
-
+            {
+                "@type": "Question",
+                "name": "信用條件不好可以申請房屋二胎嗎？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "是否可辦理仍需依房屋價值、既有負債、收入、還款能力、信用及整體案件條件綜合評估，無法單以單一信用條件判斷。"
+                }
+            },
             {
                 "@type": "Question",
                 "name": "房屋二胎一定需要保證人嗎？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "是否需要保證人需依個案條件及實際審核結果而定，並非所有案件都相同。"
+                    "text": "是否需要保證人需依個案條件及實際審核結果而定，並非所有案件都採相同方式。"
                 }
             },
-
             {
                 "@type": "Question",
                 "name": "房屋二胎多久可以完成？",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "實際辦理時間會受到案件條件、文件完整度及審核流程等因素影響，因此無法保證固定工作天數。"
+                    "text": "實際辦理時間會受到案件條件、文件完整度、審核方式及後續流程影響，因此無法保證固定工作天數。"
                 }
             }
-
         ]
     }
-
     </script>
 
 </head>
@@ -310,6 +608,25 @@
         <div class="article-container">
 
 
+            <!-- Breadcrumb -->
+
+            <nav class="breadcrumb" aria-label="麵包屑導覽">
+
+                <a href="index.html">
+                    安居資金顧問
+                </a>
+
+                <span> › </span>
+
+                <span>
+                    房屋二胎
+                </span>
+
+            </nav>
+
+
+            <!-- Header -->
+
             <header class="article-header">
 
                 <span class="article-label">
@@ -318,12 +635,14 @@
 
                 <h1>
                     房屋二胎是什麼？<br>
-                    條件、文件、流程與常見問題
+                    二胎房貸條件、流程、文件與常見問題
                 </h1>
 
                 <p>
-                    安居資金顧問整理房屋二胎相關資訊，
-                    協助您先了解基本概念，再依自身條件進行評估。
+                    房屋已有第一順位房貸，仍有資金需求時，
+                    屋主可能會進一步評估房屋二胎。
+                    以下整理常見條件、辦理流程、準備文件與評估重點，
+                    協助您先理解再決定是否適合進一步規劃。
                 </p>
 
             </header>
@@ -332,107 +651,223 @@
             <article class="article-content">
 
 
+                <!-- 01 -->
+
                 <h2>
                     什麼是房屋二胎？
                 </h2>
 
                 <p>
-                    房屋二胎通常是指房屋已經有第一順位抵押權，
-                    在符合相關條件的情況下，再以房屋剩餘價值進行後續資金規劃。
+                    房屋二胎，又常被稱為二胎房貸，
+                    通常是指房屋已經存在第一順位抵押權的情況下，
+                    再依房屋剩餘價值、既有貸款餘額及個案財務條件，
+                    評估第二順位的資金規劃方式。
                 </p>
 
                 <p>
-                    是否適合申請房屋二胎，以及實際可評估的額度、
-                    利率、還款方式與其他條件，都需要依房屋價值、
-                    原有貸款、收入、信用及整體案件條件進行評估。
+                    舉例來說，房屋目前仍有第一順位房貸尚未清償，
+                    但房屋本身仍具有一定市場價值，
+                    屋主又有額外資金需求時，
+                    就可能進一步了解房屋二胎是否適合自身條件。
+                </p>
+
+                <p>
+                    實際可評估的額度、利率、期數、還款方式及相關費用，
+                    並不是只看房屋價值，
+                    還會依第一順位貸款餘額、收入、負債、信用、
+                    資金用途及整體還款能力進行綜合評估。
                 </p>
 
 
                 <div class="notice-box">
 
-                    <strong>提醒：</strong>
+                    <strong>重要提醒：</strong>
 
-                    房屋二胎並非每個案件條件都相同，
-                    實際方案應以個案評估及正式合約內容為準。
+                    房屋二胎不是每個案件都有相同條件。
+                    實際額度、利率、期數、費用、擔保設定及其他內容，
+                    應以個案審查結果及正式契約內容為準。
 
                 </div>
 
+
+                <!-- 02 -->
+
+                <h2>
+                    房屋二胎與房屋增貸有什麼不同？
+                </h2>
+
+                <p>
+                    許多屋主在有資金需求時，
+                    會先遇到「房屋增貸」與「房屋二胎」兩種不同方向。
+                    兩者都與既有房屋資產有關，但實際結構並不相同。
+                </p>
+
+
+                <div class="comparison-box">
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            房屋增貸
+                        </h3>
+
+                        <p>
+                            通常是向原本第一順位貸款機構，
+                            依房屋現值、貸款餘額及申請人條件，
+                            再申請增加原有貸款額度。
+                        </p>
+
+                    </div>
+
+
+                    <div class="comparison-card">
+
+                        <h3>
+                            房屋二胎
+                        </h3>
+
+                        <p>
+                            在第一順位抵押權仍存在的情況下，
+                            再依房屋剩餘價值及整體案件條件，
+                            評估第二順位的資金規劃。
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    兩者在審核條件、權利順位、利率、可評估額度、
+                    辦理方式與還款結構上可能有所不同。
+                    實際適合增貸還是房屋二胎，
+                    應依房屋條件與整體財務狀況判斷。
+                </p>
+
+
+                <!-- 03 -->
 
                 <h2>
                     哪些情況可能會考慮房屋二胎？
                 </h2>
 
                 <p>
-                    當房屋已經存在第一順位房貸，但仍有資金需求時，
-                    部分屋主可能會進一步了解房屋二胎的可能性。
+                    房屋二胎不是單純「有房就能借」，
+                    而是在房屋已有貸款的情況下，
+                    重新檢視資產價值、貸款餘額與資金需求的一種方式。
+                </p>
+
+                <p>
+                    常見可能進一步評估的情況包括：
                 </p>
 
                 <ul>
 
                     <li>
-                        臨時資金周轉需求
+                        房屋仍有第一順位房貸，但目前有額外資金需求
                     </li>
 
                     <li>
-                        裝修或房屋相關支出
+                        自營業者或企業主有合法的營運資金需求
                     </li>
 
                     <li>
-                        個人或家庭資金規劃
+                        房屋裝修、家庭支出或其他資金規劃
                     </li>
 
                     <li>
-                        其他合法且合理的資金需求
+                        有多筆負債，希望重新整理整體財務結構
+                    </li>
+
+                    <li>
+                        希望保留房產，不希望因短期資金需求立即出售房屋
+                    </li>
+
+                    <li>
+                        原金融機構增貸空間有限，希望進一步了解其他可行方式
                     </li>
 
                 </ul>
 
+                <p>
+                    不同需求所適合的方案可能不同，
+                    因此在申請之前，
+                    應先評估資金用途、成本與自身還款能力。
+                </p>
+
+
+                <!-- 04 -->
 
                 <h2>
-                    房屋二胎基本條件
+                    房屋二胎基本條件與評估重點
                 </h2>
 
                 <p>
-                    房屋二胎的實際條件會依案件不同而有所差異，
-                    常見評估方向包括：
+                    二胎房貸並沒有單一固定條件，
+                    實際案件通常會從不動產價值與借款人財務狀況兩個面向進行評估。
                 </p>
 
                 <ul>
 
                     <li>
-                        房屋所有權及不動產狀況
+                        房屋所有權及產權狀況
                     </li>
 
                     <li>
-                        房屋目前市場價值
+                        房屋所在地與目前市場價值
                     </li>
 
                     <li>
-                        第一順位房貸餘額
+                        第一順位房貸目前剩餘本金
                     </li>
 
                     <li>
-                        收入與還款能力
+                        房屋目前已有的抵押權及其他設定
                     </li>
 
                     <li>
-                        個人信用及整體負債情況
+                        借款人的收入或財務能力
                     </li>
 
                     <li>
-                        資金需求與還款規劃
+                        目前整體負債情形
+                    </li>
+
+                    <li>
+                        個人信用與還款紀錄
+                    </li>
+
+                    <li>
+                        本次資金需求與用途
+                    </li>
+
+                    <li>
+                        後續預計的還款來源與規劃
                     </li>
 
                 </ul>
 
+
+                <div class="notice-box">
+
+                    <strong>不是只有房價越高就一定能取得越高額度。</strong>
+
+                    實際評估還必須扣除原有貸款及相關權利設定，
+                    並綜合考量案件整體風險與還款能力。
+
+                </div>
+
+
+                <!-- 05 -->
 
                 <h2>
                     申請房屋二胎需要哪些文件？
                 </h2>
 
                 <p>
-                    實際所需文件會依案件及辦理方式而有所不同，
-                    常見可能包含以下資料：
+                    實際需要提供的資料會依案件條件、
+                    申請人身分與辦理方式不同而有所差異。
+                    常見可能需要準備：
                 </p>
 
                 <ul>
@@ -442,149 +877,478 @@
                     </li>
 
                     <li>
-                        土地、建物相關資料
+                        土地及建物相關資料
                     </li>
 
                     <li>
-                        收入或財力相關證明
+                        第一順位房貸或既有貸款相關資料
                     </li>
 
                     <li>
-                        既有房貸或負債相關資料
+                        收入、薪資或其他財力相關證明
                     </li>
 
                     <li>
-                        其他案件評估所需文件
+                        既有負債與還款資訊
+                    </li>
+
+                    <li>
+                        印鑑或其他案件辦理所需資料
+                    </li>
+
+                    <li>
+                        審查過程中其他必要文件
                     </li>
 
                 </ul>
 
+                <p>
+                    文件準備越完整，
+                    通常越有助於後續了解案件實際狀況。
+                    實際文件仍應依個案需求確認。
+                </p>
+
+
+                <!-- 06 -->
 
                 <h2>
                     房屋二胎辦理流程
                 </h2>
 
-                <h3>
-                    ① 初步諮詢
-                </h3>
-
                 <p>
-                    先了解您的房屋狀況、資金需求及目前貸款情形。
+                    實際辦理程序會依不同方案有所差異，
+                    一般可先從以下幾個階段理解：
                 </p>
 
 
-                <h3>
-                    ② 房屋與條件評估
-                </h3>
+                <div class="process-list">
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            1
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                初步諮詢
+                            </h3>
+
+                            <p>
+                                先了解房屋所在地、目前貸款狀況、
+                                資金需求與基本財務條件。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            2
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                房屋與條件評估
+                            </h3>
+
+                            <p>
+                                依不動產價值、第一順位貸款、
+                                既有設定及整體財務狀況進行初步評估。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            3
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                方案與文件確認
+                            </h3>
+
+                            <p>
+                                依個案評估結果確認可行方向、
+                                所需文件及相關條件。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="process-number">
+                            4
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                審核與後續辦理
+                            </h3>
+
+                            <p>
+                                經審核後，
+                                再依實際方案、契約及相關程序完成後續辦理。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- 07 -->
+
+                <h2>
+                    房屋二胎額度怎麼評估？
+                </h2>
 
                 <p>
-                    依不動產條件、第一順位貸款及整體財務條件進行評估。
+                    房屋二胎的可評估空間，
+                    通常與房屋目前市場價值、第一順位貸款餘額、
+                    其他抵押設定與個案條件有關。
+                </p>
+
+                <p>
+                    因此不能單純以「房屋市價減掉房貸餘額」
+                    就直接認定一定可以取得相同金額。
+                    實際仍需要考量可接受的擔保價值、
+                    權利順位、還款能力及整體風險。
+                </p>
+
+                <p>
+                    如果希望知道自己的房屋目前可能具有多少資金規劃空間，
+                    可以先整理房屋所在地、目前房貸餘額及資金需求，
+                    再進行初步評估。
                 </p>
 
 
-                <h3>
-                    ③ 方案與文件確認
-                </h3>
+                <!-- 08 -->
+
+                <h2>
+                    房屋二胎利率與費用應該看什麼？
+                </h2>
 
                 <p>
-                    依個案條件確認可能的辦理方式及所需文件。
+                    在了解二胎房貸時，
+                    不應只看單一利率數字，
+                    還應一併確認整體資金成本與契約內容。
+                </p>
+
+                <ul>
+
+                    <li>
+                        利率計算方式
+                    </li>
+
+                    <li>
+                        實際借款本金
+                    </li>
+
+                    <li>
+                        還款期數
+                    </li>
+
+                    <li>
+                        每期應繳金額
+                    </li>
+
+                    <li>
+                        相關手續費或辦理費用
+                    </li>
+
+                    <li>
+                        提前清償相關條件
+                    </li>
+
+                    <li>
+                        抵押權設定及契約內容
+                    </li>
+
+                    <li>
+                        逾期或違約時的相關約定
+                    </li>
+
+                </ul>
+
+                <p>
+                    在簽署正式契約之前，
+                    應確認各項費用、權利義務與還款方式，
+                    不宜只以單一利率判斷方案是否合適。
                 </p>
 
 
-                <h3>
-                    ④ 審核及後續辦理
-                </h3>
-
-                <p>
-                    實際流程與結果依案件條件及審核結果而定。
-                </p>
-
+                <!-- 09 -->
 
                 <h2>
                     房屋二胎還款方式
                 </h2>
 
                 <p>
-                    還款方式會依實際方案及契約內容而有所不同，
-                    常見可能包含本息攤還等方式。
+                    還款方式會依實際方案與契約內容有所不同，
+                    可能包含本息攤還或其他依個案條件設計的方式。
                 </p>
 
                 <p>
-                    在評估房屋二胎時，除了關注可取得的資金，
-                    也應一併考量利率、期數、每期還款金額、
-                    相關費用及整體還款能力。
+                    評估房屋二胎時，
+                    應把每期還款金額納入整體現金流考量，
+                    並確認還款來源是否穩定，
+                    避免只關注可以取得多少資金，
+                    卻忽略後續還款壓力。
                 </p>
 
 
+                <!-- 10 -->
+
                 <h2>
-                    房屋二胎常見問題
+                    申請房屋二胎前，建議先確認這幾件事
                 </h2>
 
+                <ul>
 
-                <div class="faq-box">
+                    <li>
+                        自己真正需要的資金金額是多少
+                    </li>
 
-                    <h3>
-                        什麼是房屋二胎？
-                    </h3>
+                    <li>
+                        資金用途是否明確且合理
+                    </li>
 
-                    <p>
-                        房屋二胎通常是在房屋已有第一順位抵押權的情況下，
-                        再依房屋剩餘價值及個案條件進行資金規劃。
-                    </p>
+                    <li>
+                        房屋目前第一順位房貸還剩多少
+                    </li>
 
-                </div>
+                    <li>
+                        自己每月可以承擔多少還款金額
+                    </li>
 
+                    <li>
+                        是否已完整了解利率、費用及契約條件
+                    </li>
 
-                <div class="faq-box">
+                    <li>
+                        是否有其他成本較低或更適合的資金方案
+                    </li>
 
-                    <h3>
-                        信用條件不好可以申請嗎？
-                    </h3>
+                    <li>
+                        若未來收入變動，是否仍具有還款能力
+                    </li>
 
-                    <p>
-                        是否可以辦理需要依個案條件評估，
-                        包含房屋價值、收入、負債及整體還款能力等因素。
-                    </p>
-
-                </div>
-
-
-                <div class="faq-box">
-
-                    <h3>
-                        房屋二胎一定需要保證人嗎？
-                    </h3>
-
-                    <p>
-                        是否需要保證人需依個案條件及實際審核結果而定。
-                    </p>
-
-                </div>
+                </ul>
 
 
-                <div class="faq-box">
+                <div class="notice-box">
 
-                    <h3>
-                        房屋二胎多久可以完成？
-                    </h3>
-
-                    <p>
-                        實際時間會受到文件完整度、案件條件及審核流程影響，
-                        因此無法保證固定工作天數。
-                    </p>
+                    房屋屬於重要資產，
+                    任何涉及抵押權設定與資金規劃的決策，
+                    都應先充分理解成本、權利順位、
+                    契約內容及可能風險，再進行後續辦理。
 
                 </div>
 
+
+                <!-- FAQ -->
+
+                <section class="faq-section">
+
+                    <h2>
+                        房屋二胎常見問題
+                    </h2>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            什麼是房屋二胎？
+                        </h3>
+
+                        <p>
+                            房屋二胎通常是在房屋已有第一順位抵押權的情況下，
+                            再依房屋剩餘價值、既有負債與個案條件，
+                            評估第二順位的資金規劃。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            房屋二胎跟二胎房貸是一樣的嗎？
+                        </h3>
+
+                        <p>
+                            一般市場上「房屋二胎」與「二胎房貸」
+                            經常被用來描述相同或相近的資金規劃概念，
+                            也就是房屋已有第一順位抵押權後，
+                            再評估第二順位資金方案。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            房屋二胎與增貸有什麼不同？
+                        </h3>
+
+                        <p>
+                            房屋增貸通常是在原第一順位貸款架構下增加額度；
+                            房屋二胎則是在第一順位抵押權仍存在時，
+                            再評估第二順位的資金方案。
+                            實際適合哪一種方式，
+                            需依房屋與個人條件判斷。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            信用條件不好可以申請嗎？
+                        </h3>
+
+                        <p>
+                            是否可以辦理不能只看單一信用條件，
+                            還需要綜合評估房屋價值、
+                            既有負債、收入、還款能力及整體案件狀況。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            房屋二胎一定需要保證人嗎？
+                        </h3>
+
+                        <p>
+                            是否需要保證人需依個案條件、
+                            辦理方式及實際審核結果而定，
+                            並非所有案件都採相同條件。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            房屋二胎多久可以完成？
+                        </h3>
+
+                        <p>
+                            實際辦理時間會受到案件條件、
+                            文件完整度、審核方式及相關程序影響，
+                            因此無法保證固定工作天數。
+                        </p>
+
+                    </div>
+
+
+                    <div class="faq-box">
+
+                        <h3>
+                            有房子就一定可以辦理房屋二胎嗎？
+                        </h3>
+
+                        <p>
+                            不一定。
+                            是否具有可規劃空間，
+                            還需要評估房屋價值、
+                            第一順位貸款餘額、既有設定、
+                            借款人的財務條件及整體還款能力。
+                        </p>
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- Related Services -->
+
+                <section class="related-services">
+
+                    <h2>
+                        其他資金規劃服務
+                    </h2>
+
+                    <p>
+                        如果目前需求不只是房屋二胎，
+                        也可以進一步了解其他不動產與債務規劃方向。
+                    </p>
+
+
+                    <div class="related-links">
+
+                        <a
+                            href="real-estate-loan.html"
+                            class="related-link"
+                        >
+
+                            <span>
+                                不動產資金規劃
+                            </span>
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+
+                        <a
+                            href="fund-consolidation.html"
+                            class="related-link"
+                        >
+
+                            <span>
+                                債務整合與資金規劃
+                            </span>
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <!-- CTA -->
 
                 <section class="article-cta">
 
                     <h2>
-                        想了解自己的房屋條件？
+                        不確定自己的房屋還有多少資金規劃空間？
                     </h2>
 
                     <p>
-                        歡迎先進行免費初步諮詢，
-                        實際方案依個案條件評估。
+                        可先提供房屋基本資訊、
+                        目前貸款狀況與資金需求，
+                        由專員進行免費初步諮詢與條件評估。
+                        實際額度、利率、費用及相關內容，
+                        依個案審查與正式契約為準。
                     </p>
 
 
@@ -597,7 +1361,7 @@
 
                             <i class="bi bi-chat-dots"></i>
 
-                            免費諮詢
+                            免費初步評估
 
                         </a>
 
@@ -620,6 +1384,17 @@
                 </section>
 
 
+                <p class="article-disclaimer">
+
+                    本頁內容為一般性資訊整理，
+                    不代表任何個案一定符合申請條件，
+                    亦不構成核貸或特定條件之保證。
+                    實際方案、額度、利率、費用、
+                    審查方式及契約內容依個案條件與正式文件為準。
+
+                </p>
+
+
             </article>
 
 
@@ -631,4 +1406,3 @@
 </body>
 
 </html>
-```
