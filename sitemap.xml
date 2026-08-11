@@ -2,28 +2,24 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- 首頁 -->
     <url>
         <loc>https://fourseasons-cyber.github.io/anju-finance/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- 房屋二胎 -->
     <url>
         <loc>https://fourseasons-cyber.github.io/anju-finance/house-second-mortgage.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- 不動產借貸 -->
     <url>
         <loc>https://fourseasons-cyber.github.io/anju-finance/real-estate-loan.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- 資金整合 -->
     <url>
         <loc>https://fourseasons-cyber.github.io/anju-finance/fund-consolidation.html</loc>
         <changefreq>monthly</changefreq>
