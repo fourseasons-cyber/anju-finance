@@ -26,6 +26,108 @@
     >
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- ================= 首頁新增：文章區塊與信任導覽樣式 ================= -->
+    <style>
+        .latest-articles {
+            background: #faf7f3;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 36px;
+        }
+
+        .article-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            padding: 28px;
+            background: #fff;
+            border: 1px solid #e4e8ed;
+            border-radius: 18px;
+            text-decoration: none;
+            box-shadow: 0 10px 28px rgba(0,0,0,.05);
+            transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-4px);
+            border-color: #1e4f91;
+            box-shadow: 0 14px 34px rgba(0,0,0,.08);
+        }
+
+        .article-card-label {
+            display: inline-block;
+            width: fit-content;
+            margin-bottom: 14px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #f3eee5;
+            color: #b4883c;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .5px;
+        }
+
+        .article-card h3 {
+            margin: 0 0 14px;
+            color: #1e4f91;
+            font-size: 21px;
+            line-height: 1.55;
+        }
+
+        .article-card p {
+            margin: 0 0 22px;
+            color: #666;
+            line-height: 1.85;
+        }
+
+        .article-card-link {
+            margin-top: auto;
+            color: #1e4f91;
+            font-weight: 800;
+        }
+
+        .site-trust-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            margin: 18px 0 0;
+        }
+
+        .site-trust-links a {
+            color: rgba(255,255,255,.92);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .site-trust-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- ================= WebSite Schema：協助 Google 辨識網站名稱 ================= -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "安居資金顧問",
+        "alternateName": "安居資金顧問｜房屋二胎・不動產資金規劃・債務整合",
+        "url": "https://fourseasons-cyber.github.io/anju-finance/",
+        "inLanguage": "zh-Hant-TW"
+    }
+    </script>
+
 </head>
 
 <body>
@@ -517,6 +619,108 @@
 </section>
 
 
+
+<!-- ================= 最新文章 ================= -->
+
+<section class="latest-articles section-padding" id="articles">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <span class="section-label">LATEST ARTICLES</span>
+
+            <h2>房屋二胎與不動產資金規劃實用文章</h2>
+
+            <p>
+                從房屋二胎、增貸差異到利率與成本，先了解基本觀念，再評估適合自己的資金規劃方向。
+            </p>
+
+        </div>
+
+        <div class="article-grid">
+
+            <a
+                href="second-mortgage-vs-home-equity-loan.html"
+                class="article-card reveal"
+            >
+
+                <span class="article-card-label">
+                    房屋二胎
+                </span>
+
+                <h3>
+                    房屋二胎與房屋增貸差在哪？5 個差異一次看懂
+                </h3>
+
+                <p>
+                    比較抵押順位、申請方式、評估條件、資金成本與適用情況，快速看懂二胎與增貸的差異。
+                </p>
+
+                <span class="article-card-link">
+                    閱讀完整文章
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+
+            </a>
+
+
+            <a
+                href="can-i-borrow-again-with-mortgage.html"
+                class="article-card reveal reveal-delay-1"
+            >
+
+                <span class="article-card-label">
+                    資金規劃
+                </span>
+
+                <h3>
+                    有房貸還能再貸嗎？增貸、二胎與資金規劃差異
+                </h3>
+
+                <p>
+                    房貸尚未繳清時，是否仍有資金規劃空間？從房屋價值、貸款餘額、收入與負債條件開始了解。
+                </p>
+
+                <span class="article-card-link">
+                    閱讀完整文章
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+
+            </a>
+
+
+            <a
+                href="second-mortgage-interest-rate-costs.html"
+                class="article-card reveal reveal-delay-2"
+            >
+
+                <span class="article-card-label">
+                    利率與成本
+                </span>
+
+                <h3>
+                    房屋二胎利率怎麼看？別只看利率，還要看這 6 項成本
+                </h3>
+
+                <p>
+                    評估房屋二胎不能只看表面利率，還要一起比較費用、期數、月付金與提前清償等契約條件。
+                </p>
+
+                <span class="article-card-link">
+                    閱讀完整文章
+                    <i class="bi bi-arrow-right"></i>
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- ================= 免費諮詢 ================= -->
 
 <section class="contact section-padding" id="contact">
@@ -692,6 +896,8 @@
 
                         <span>
                             您提供的資料僅供諮詢聯繫與案件初步評估使用。
+                            詳情請參閱
+                            <a href="privacy.html">隱私權政策</a>。
                         </span>
 
                     </div>
@@ -917,6 +1123,15 @@
         <p class="footer-contact">
             專業資金諮詢・免費初步評估
         </p>
+
+        <nav
+            class="site-trust-links"
+            aria-label="網站資訊"
+        >
+            <a href="about.html">關於我們</a>
+            <a href="privacy.html">隱私權政策</a>
+            <a href="disclaimer.html">服務聲明</a>
+        </nav>
 
         <p class="copyright">
             © 2026 安居資金顧問 All Rights Reserved.
