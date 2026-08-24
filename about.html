@@ -1,0 +1,743 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>關於安居資金顧問｜房屋二胎・不動產資金規劃・債務整合</title>
+
+    <meta
+        name="description"
+        content="了解安居資金顧問的服務定位與理念。我們提供房屋二胎、不動產資金規劃與債務整合相關資訊與初步條件評估，協助屋主釐清資金需求與可行方向。"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="canonical"
+        href="https://fourseasons-cyber.github.io/anju-finance/about.html"
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="關於安居資金顧問"
+    >
+
+    <meta
+        property="og:description"
+        content="安居資金顧問專注房屋二胎、不動產資金規劃與債務整合相關資訊與初步評估。"
+    >
+
+    <meta
+        property="og:url"
+        content="https://fourseasons-cyber.github.io/anju-finance/about.html"
+    >
+
+    <meta
+        property="og:site_name"
+        content="安居資金顧問"
+    >
+
+    <meta
+        property="og:locale"
+        content="zh_TW"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <style>
+
+        .page-wrap {
+            padding: 95px 20px;
+            background: #faf7f3;
+        }
+
+        .page-container {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            margin-bottom: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: #1e4f91;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-label {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #b4883c;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+        }
+
+        .page-header h1 {
+            margin: 0 auto 20px;
+            color: #1e4f91;
+            font-size: clamp(34px, 5vw, 48px);
+            line-height: 1.4;
+            font-weight: 800;
+        }
+
+        .page-header p {
+            max-width: 720px;
+            margin: 0 auto;
+            color: #666;
+            line-height: 1.9;
+            font-size: 17px;
+        }
+
+        .content-card {
+            background: #fff;
+            padding: 50px;
+            border-radius: 22px;
+            box-shadow: 0 12px 35px rgba(0,0,0,.07);
+        }
+
+        .content-card h2 {
+            margin-top: 48px;
+            margin-bottom: 18px;
+            color: #1e4f91;
+            font-size: 29px;
+            line-height: 1.5;
+        }
+
+        .content-card h2:first-child {
+            margin-top: 0;
+        }
+
+        .content-card h3 {
+            margin-top: 24px;
+            margin-bottom: 10px;
+            color: #222;
+            font-size: 21px;
+        }
+
+        .content-card p {
+            margin-bottom: 18px;
+            color: #555;
+            line-height: 2;
+            font-size: 16px;
+        }
+
+        .content-card ul {
+            padding-left: 25px;
+            margin-bottom: 25px;
+        }
+
+        .content-card li {
+            margin-bottom: 11px;
+            color: #555;
+            line-height: 1.85;
+        }
+
+        .principle-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .principle-card {
+            padding: 24px;
+            border: 1px solid #e5e5e5;
+            border-radius: 15px;
+            background: #fafafa;
+        }
+
+        .principle-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            border-radius: 50%;
+            background: #1e4f91;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .principle-card h3 {
+            margin: 0 0 8px;
+            color: #1e4f91;
+            font-size: 20px;
+        }
+
+        .principle-card p {
+            margin-bottom: 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 28px 0;
+        }
+
+        .service-card {
+            display: block;
+            padding: 24px;
+            border: 1px solid #dfe5ec;
+            border-radius: 15px;
+            background: #fff;
+            text-decoration: none;
+            transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+            border-color: #1e4f91;
+            box-shadow: 0 10px 25px rgba(0,0,0,.06);
+        }
+
+        .service-card h3 {
+            margin-top: 0;
+            color: #1e4f91;
+        }
+
+        .service-card p {
+            margin-bottom: 0;
+            color: #666;
+        }
+
+        .notice-box {
+            margin: 28px 0;
+            padding: 20px 22px;
+            border-left: 4px solid #b4883c;
+            border-radius: 12px;
+            background: #f7f3ec;
+            color: #555;
+            line-height: 1.9;
+        }
+
+        .page-cta {
+            margin-top: 50px;
+            padding: 40px 28px;
+            border-radius: 20px;
+            text-align: center;
+            background: linear-gradient(145deg, #1e4f91, #153b6d);
+            color: #fff;
+        }
+
+        .page-cta h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .page-cta p {
+            max-width: 680px;
+            margin: 0 auto;
+            color: rgba(255,255,255,.88);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .cta-buttons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-width: 180px;
+            padding: 13px 24px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .btn-home {
+            background: #fff;
+            color: #1e4f91;
+        }
+
+        .btn-line {
+            background: #06c755;
+            color: #fff;
+        }
+
+        .disclaimer-text {
+            margin-top: 25px;
+            color: #777;
+            font-size: 13px;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+
+            .page-wrap {
+                padding: 70px 15px;
+            }
+
+            .content-card {
+                padding: 28px 22px;
+            }
+
+            .page-header h1 {
+                font-size: 31px;
+            }
+
+            .page-header p {
+                font-size: 16px;
+            }
+
+            .content-card h2 {
+                font-size: 24px;
+            }
+
+            .principle-grid,
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-cta {
+                padding: 32px 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-buttons a {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "關於安居資金顧問",
+        "url": "https://fourseasons-cyber.github.io/anju-finance/about.html",
+        "inLanguage": "zh-Hant-TW",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "安居資金顧問",
+            "url": "https://fourseasons-cyber.github.io/anju-finance/"
+        }
+    }
+    </script>
+
+</head>
+
+
+<body>
+
+    <main class="page-wrap">
+
+        <div class="page-container">
+
+
+            <nav class="breadcrumb" aria-label="麵包屑導覽">
+
+                <a href="index.html">
+                    安居資金顧問
+                </a>
+
+                <span> › </span>
+
+                <span>
+                    關於我們
+                </span>
+
+            </nav>
+
+
+            <header class="page-header">
+
+                <span class="page-label">
+                    ABOUT ANJU
+                </span>
+
+                <h1>
+                    關於安居資金顧問
+                </h1>
+
+                <p>
+                    從房屋條件、既有負債到實際資金需求，
+                    協助屋主先把問題看清楚，
+                    再評估適合的資金規劃方向。
+                </p>
+
+            </header>
+
+
+            <section class="content-card">
+
+
+                <h2>
+                    我們在做什麼？
+                </h2>
+
+                <p>
+                    安居資金顧問專注於房屋二胎、
+                    不動產資金規劃與債務整合相關資訊整理與初步條件評估。
+                </p>
+
+                <p>
+                    當屋主遇到資金需求時，
+                    真正需要處理的通常不只是「能不能借到錢」，
+                    而是先釐清房屋目前價值、
+                    原貸款餘額、既有負債、
+                    所需資金與未來還款能力。
+                </p>
+
+                <p>
+                    我們希望透過較容易理解的方式，
+                    協助使用者先掌握基本條件與評估重點，
+                    再依個案狀況判斷可能的資金規劃方向。
+                </p>
+
+
+                <h2>
+                    我們重視的 3 件事
+                </h2>
+
+
+                <div class="principle-grid">
+
+
+                    <div class="principle-card">
+
+                        <div class="principle-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+                        <h3>
+                            先了解，再評估
+                        </h3>
+
+                        <p>
+                            在談額度與方案之前，
+                            先確認房屋、負債與實際資金需求，
+                            避免只用單一條件判斷。
+                        </p>
+
+                    </div>
+
+
+                    <div class="principle-card">
+
+                        <div class="principle-icon">
+                            <i class="bi bi-file-earmark-check"></i>
+                        </div>
+
+                        <h3>
+                            條件說明透明
+                        </h3>
+
+                        <p>
+                            利率、費用、期數、
+                            抵押設定與契約條件，
+                            都應在評估與正式文件中清楚確認。
+                        </p>
+
+                    </div>
+
+
+                    <div class="principle-card">
+
+                        <div class="principle-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                        <h3>
+                            重視還款能力
+                        </h3>
+
+                        <p>
+                            是否具有資金空間，
+                            與是否適合增加借款是兩件不同的事。
+                            我們重視整體現金流與後續還款能力。
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <h2>
+                    我們提供哪些資訊與服務方向？
+                </h2>
+
+
+                <div class="service-grid">
+
+
+                    <a
+                        href="house-second-mortgage.html"
+                        class="service-card"
+                    >
+
+                        <h3>
+                            房屋二胎
+                        </h3>
+
+                        <p>
+                            了解二胎房貸的基本條件、
+                            抵押順位、文件、
+                            流程與常見評估方式。
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="real-estate-loan.html"
+                        class="service-card"
+                    >
+
+                        <h3>
+                            不動產資金規劃
+                        </h3>
+
+                        <p>
+                            依房屋、土地或其他不動產條件，
+                            了解可能的資金規劃方向。
+                        </p>
+
+                    </a>
+
+
+                    <a
+                        href="fund-consolidation.html"
+                        class="service-card"
+                    >
+
+                        <h3>
+                            債務整合與資金整合
+                        </h3>
+
+                        <p>
+                            整理多筆負債、
+                            月付金與整體現金流，
+                            協助釐清目前財務結構。
+                        </p>
+
+                    </a>
+
+
+                </div>
+
+
+                <h2>
+                    我們怎麼看待「房屋有價值」這件事？
+                </h2>
+
+                <p>
+                    房屋具有市場價值，
+                    不代表一定可以取得特定額度，
+                    也不代表一定適合再增加借款。
+                </p>
+
+                <p>
+                    實際評估時，
+                    還需確認第一順位貸款餘額、
+                    其他抵押權設定、
+                    房屋所在地與類型，
+                    再搭配申請人的收入、
+                    負債及還款能力綜合判斷。
+                </p>
+
+                <div class="notice-box">
+
+                    <strong>安居資金顧問的定位是協助釐清與評估，而不是保證核貸。</strong>
+
+                    任何額度、利率、期數、
+                    費用與是否可承作，
+                    均應依個案審查與正式契約內容為準。
+
+                </div>
+
+
+                <h2>
+                    為什麼網站提供這些文章？
+                </h2>
+
+                <p>
+                    房屋二胎、不動產借貸與債務整合，
+                    涉及許多一般使用者不熟悉的名詞與條件。
+                </p>
+
+                <p>
+                    因此我們持續整理常見問題，
+                    包含房屋二胎與增貸差異、
+                    有房貸是否還能再貸、
+                    二胎利率與相關成本等內容，
+                    希望讓使用者在做決定前，
+                    可以先了解基本概念。
+                </p>
+
+                <p>
+                    網站內容以一般性資訊整理為主，
+                    不能取代個案審查、
+                    契約確認或專業法律與財務意見。
+                </p>
+
+
+                <h2>
+                    需要評估時，可以先準備什麼？
+                </h2>
+
+                <ul>
+
+                    <li>
+                        房屋所在地與基本資料
+                    </li>
+
+                    <li>
+                        目前房貸剩餘金額
+                    </li>
+
+                    <li>
+                        是否存在其他抵押權或設定
+                    </li>
+
+                    <li>
+                        目前主要收入來源
+                    </li>
+
+                    <li>
+                        現有貸款與負債
+                    </li>
+
+                    <li>
+                        實際所需資金金額
+                    </li>
+
+                    <li>
+                        資金用途與預計還款來源
+                    </li>
+
+                </ul>
+
+                <p>
+                    資料越完整，
+                    越容易先判斷應該從房屋增貸、
+                    房屋二胎、債務整合，
+                    或其他不動產資金規劃方向開始了解。
+                </p>
+
+
+                <section class="page-cta">
+
+                    <h2>
+                        有資金需求，不確定該從哪裡開始？
+                    </h2>
+
+                    <p>
+                        可先提供房屋基本資訊、
+                        目前房貸餘額與實際資金需求，
+                        由專員協助進行免費初步條件評估。
+                        實際額度、利率、費用、
+                        期數及相關條件，
+                        依個案審查與正式契約為準。
+                    </p>
+
+
+                    <div class="cta-buttons">
+
+                        <a
+                            href="index.html#contact"
+                            class="btn-home"
+                        >
+
+                            <i class="bi bi-chat-dots"></i>
+
+                            免費初步評估
+
+                        </a>
+
+
+                        <a
+                            href="https://lin.ee/9uCF5xJ"
+                            class="btn-line"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <i class="bi bi-line"></i>
+
+                            LINE 諮詢
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <p class="disclaimer-text">
+
+                    本頁內容為一般性資訊整理，
+                    不構成核貸、額度、
+                    利率或特定方案之保證。
+                    實際服務內容、審查結果、
+                    費用、利率、期數、
+                    抵押條件及契約內容，
+                    依個案條件與正式文件為準。
+
+                </p>
+
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
+```
